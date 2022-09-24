@@ -4,7 +4,8 @@
 user input, is strong enough'''
 
 import re
-StrongPasswordRegex = re.compile(r'[a-z]+[A-Z]+[0-9]+')
+StrongPasswordRegex = re.compile(r'[a-z]+[A-Z]+[0-9]+')  # A bug which only allows for strong passwords
+                                                         # that are written in precedence following the regex 
 def StrongPasswordCheck():
     print("Strong password: must contain 'a-z', 'A-Z', '0-9'")
     password = input('password must be at least 8 characters long\n')
